@@ -1,6 +1,6 @@
 
 module.exports = {
   devServer: {
-    proxy: 'http://localhost:3000'
+    proxy: 'https://torretech-proxy-server.vercel.app'
   }
 }
