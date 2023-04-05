@@ -1,8 +1,7 @@
 <template>
     <form @submit="onSubmit" class="get-form">
         <div class="form-control">
-            <label>User</label>
-            <input type="text" v-model="username" name="username" placeholder="Search User" />
+            <input type="text" v-model="username" name="username" placeholder="Search using UserName e.g. iyadmfh50" />
         </div>
         <input type="submit" value="View Skills" class="btn btn-block" />
     </form>
