@@ -24,7 +24,7 @@ export default {
   methods:{
     async fetchSKills(id){
       
-      const res = await axios.get(`http://localhost:8080/user/${id}`);   
+      const res = await axios.get(`https://torretech-proxy-server.vercel.app/user/${id}`);   
       this.skills = res.data.strengths
     }
   },
