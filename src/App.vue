@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Header title="Torre" />
+    <Header title="Torre User Skills" />
     <GetUser @get-skills="fetchSKills"/>
     <Skills :skills="skills"/>
   </div>
@@ -24,7 +24,7 @@ export default {
   methods:{
     async fetchSKills(id){
       
-      const res = await axios.get(`http://localhost:8080/user/iyadmfh50`);   
+      const res = await axios.get(`http://localhost:8080/user/${id}`);   
       this.skills = res.data.strengths
     }
   },
